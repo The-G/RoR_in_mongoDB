@@ -46,5 +46,5 @@ group :development do
 end
 
 # To MongoDB
-# gem 'mongo', '1.6.2'
-# gem 'mongoid', '2.4.9'
+gem 'mongo'
+gem 'mongoid'
