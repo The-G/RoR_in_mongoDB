@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :idols
+  
+  root 'idols#index'
+  get "idols", to: "idols#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
