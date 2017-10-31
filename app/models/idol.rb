@@ -8,4 +8,8 @@ class Idol
   
   # to set name necessary
   validates_presence_of :name
+  
+  
+  embeds_many :comments
+
 end

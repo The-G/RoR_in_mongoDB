@@ -48,3 +48,4 @@ end
 # To MongoDB
 gem 'mongo'
 gem 'mongoid'
+# gem 'bson_ext'

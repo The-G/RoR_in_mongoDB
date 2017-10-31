@@ -15,5 +15,26 @@
   <%= @idol.test %>
 </p>
 
+<!--<p>-->
+<!--  <strong>birthday:</strong>-->
+<!--  <%#= @idol.birthday %>-->
+<!--</p>-->
+
+<% if @idol.comments.size > 0 %>
+  <h2>Comments</h2>
+  <% for comment in @idol.comments %>
+    <p>comment_id : <%= comment.id%></p>
+    <h3>comment_name : <%= comment.name %></h3>
+    <p>comment_content : <%= comment.content %></p>
+  <% end %>
+<% end %>
+
+<h2>New Comment</h2>
+<%= form_for [@idol, Comment.new] do |f|%>
+  <p><%= f.label :name  %><%=f.text_field :name%></p>
+  <p><%= f.text_area :content, :row => 10%></p>
+  <p><%= f.submit %></p>
+<% end %>
+
 <%= link_to 'Edit', edit_idol_path(@idol) %> |
 <%= link_to 'Back', idols_path %>

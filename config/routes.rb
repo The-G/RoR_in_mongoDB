@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :idols
+  resources :idols do
+    resources :comments
+  end
   
   root 'idols#index'
   get "idols", to: "idols#index"
