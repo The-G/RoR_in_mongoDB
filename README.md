@@ -38,10 +38,7 @@
 
 1. Add test column
     - edit some file
-        - idol.rb
-        - idols_controller.rb
-        - _form.html.erb
-        - show.html.erb
+        - idol.rb / idols_controller.rb / _form.html.erb / show.html.erb
     - **Fail to add date field in mongoid...**
         - may be you can solve using that <a href="https://gist.github.com/k-rudy/7580106">link</a>
     - set necessary name field
@@ -51,21 +48,21 @@
     - Wrtie "rails g model comment name:string content:text" in terminal
     - Set model relationship 1:M = idol:comments 
         - Edit file
-            - idol.rb
-            - comment.rb
-            - routes.rb
+            - idol.rb / comment.rb / routes.rb
     - Write "rails g controller comments"
         - Edit file
-            - comments_controller.rb
-            - show.html.erb
+            - comments_controller.rb / show.html.erb
     - Confirm input comments
         - After input comment in show page then, write 'Comment.count', 'Idol.first.comments.count' in rails console to check data count
             - you can enter the rails console by writting 'rails c' in terminal
 
-- modify
-idols.rb
-show.html.erb
-routes.rb
-- create 
-comments_controller.rb
-comment.rb
+3. Add new scaffold author and set relationship with idol
+    - Wrtie "rails g scaffold author name:string" in terminal
+    - Set model relationship 1:M = author:idols
+        - Edit file
+            - idol.rb / author.rb / routes.rb / authors_controller.rb
+    - create author and edit idol then check data relationship
+        - Edit file
+            - idols_controller.rb / _form.html.erb / show.html.erb
+
+

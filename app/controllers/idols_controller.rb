@@ -69,6 +69,6 @@ class IdolsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def idol_params
-      params.require(:idol).permit(:name, :age, :test)
+      params.require(:idol).permit(:name, :age, :test, :author_id)
     end
 end
