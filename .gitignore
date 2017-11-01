@@ -16,7 +16,8 @@
 !/log/.keep
 /tmp
 /data
-mongod
+/data_origin
+mongod_origin
 
 
 
