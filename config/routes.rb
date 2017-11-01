@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
+  resources :products do
+    member do
+      put "crawling", to: "products#crawling"
+    end
+  end
   resources :authors
   resources :idols do
     resources :comments
   end
   
-  root 'idols#index'
-  get "idols", to: "idols#index"
+  # root 'idols#index'
+  root 'products#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

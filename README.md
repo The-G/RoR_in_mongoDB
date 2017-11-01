@@ -65,4 +65,10 @@
         - Edit file
             - idols_controller.rb / _form.html.erb / show.html.erb
 
+4. Add mongoDB ERD using 'railroady' gem but do not work on cloud9
+
+5. Crawling web page using Selenium
+    - Add gem 'selenium-webdriver'
+    - create scaffold then edit controller to test crawling
+
 
