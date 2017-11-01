@@ -49,3 +49,5 @@ end
 gem 'mongo'
 gem 'mongoid'
 # gem 'bson_ext'
+
+gem 'selenium-webdriver'

@@ -17,6 +17,7 @@
 /tmp
 /data
 /data_origin
+mongod
 mongod_origin
 
 
